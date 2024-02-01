@@ -65,10 +65,10 @@ resource "aws_security_group" "eric_sg" {
   }
 }
 
-resource "aws_key_pair" "eric_auth" {
-  key_name   = "awsTerraTest"
-  public_key = file("~/.ssh/awsTerraTest")
-}
+#resource "aws_key_pair" "eric_auth" {
+#  key_name   = "awsTerraTest"
+#  public_key = file("~/.ssh/awsTerraTest")
+#}
 
 resource "aws_instance" "dev_node" {
     instance_type = "t2.micro"
