@@ -73,7 +73,7 @@ resource "aws_security_group" "eric_sg" {
 resource "aws_instance" "dev_node" {
     instance_type = "t2.micro"
     ami = data.aws_ami.server_ami.id
-    key_name = aws_key_pair.eric_auth.id 
+#    key_name = aws_key_pair.eric_auth.id 
     vpc_security_group_ids = [aws_security_group.eric_sg.id]
     subnet_id = aws_subnet.eric_public_subnet.id
     user_data = file("userdata.tpl")
