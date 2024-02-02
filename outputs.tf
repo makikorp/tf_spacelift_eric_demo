@@ -3,8 +3,8 @@ output "dev_ip" {
 }
 
 output "connection_script" {
-  value = templatefile("${var.host_os)-ssh-config.tpl", {
+  value = templatefile("${var.host_os}-ssh-config.tpl", {
     hostname = aws_instance.dev_node.public.ip,
     user = "ubuntu",
-  identityfile = "/.ssh/<key name>} )
-  }
+  identityfile = "/.ssh/awsTerraTest"})
+}
