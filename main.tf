@@ -93,4 +93,4 @@ resource "aws_instance" "dev_node" {
 #     identityfile = "~/.ssh/awsTerraTest" })
 #     interpreter = var.host_os == "windows" ? ["Powershell", "-Command"] : ["bash", "-c"]
 #   }
-# }
+}

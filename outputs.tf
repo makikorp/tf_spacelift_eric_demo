@@ -7,3 +7,4 @@ output "connection_script" {
     hostname = aws_instance.dev_node.public.ip,
     user = "ubuntu",
   identityfile = "/.ssh/<key name>} )
+  }
